@@ -67,8 +67,6 @@ class DataProcessor:
         # save_csv(self.household_profiles, self.cfg.output_data, 'household_profiles')
         save_csv(self.household_profiles.head(1000), self.cfg.output_data, 'household_profiles')
 
-
-
     def main(self):
         self.add_date_columns_to_household_profiles()
         self.filter_households()
